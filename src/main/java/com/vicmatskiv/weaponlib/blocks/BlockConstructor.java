@@ -1,0 +1,29 @@
+package com.vicmatskiv.weaponlib.blocks;
+
+import net.minecraft.block.*;
+import net.minecraft.block.material.*;
+import net.minecraft.creativetab.*;
+import net.minecraft.world.*;
+import net.minecraft.entity.player.*;
+
+public class BlockConstructor extends Block
+{
+    private Object mod;
+    private int modGuidId;
+    static final int ID = 1000000;
+    
+    public BlockConstructor(final Object mod) {
+        super(Material.rock);
+        this.mod = mod;
+        this.setBlockName("bench");
+        this.setCreativeTab(CreativeTabs.tabDecorations);
+    }
+    
+    public boolean onBlockActivated(final World parWorld, final int x, final int y, final int z, final EntityPlayer parPlayer, final int p_149727_6_, final float p_149727_7_, final float p_149727_8_, final float p_149727_9_) {
+        if (!parWorld.isRemote) {
+            System.out.println("BlockBench onBlockActivated");
+            parPlayer.openGui(this.mod, 1000000, parWorld, x, y, z);
+        }
+        return true;
+    }
+}

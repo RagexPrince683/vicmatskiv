@@ -1,0 +1,151 @@
+package com.vicmatskiv.mw.models;
+
+import net.minecraft.client.model.*;
+import net.minecraft.entity.*;
+
+public class StubbyGrip extends ModelBase
+{
+    ModelRenderer gun1;
+    ModelRenderer gun6;
+    ModelRenderer gun7;
+    ModelRenderer gun14;
+    ModelRenderer gun15;
+    ModelRenderer gun17;
+    ModelRenderer gun19;
+    ModelRenderer gun21;
+    ModelRenderer gun22;
+    ModelRenderer gun26;
+    ModelRenderer gun27;
+    ModelRenderer gun29;
+    ModelRenderer gun30;
+    ModelRenderer gun31;
+    ModelRenderer gun32;
+    ModelRenderer gun33;
+    ModelRenderer gun34;
+    ModelRenderer gun35;
+    
+    public StubbyGrip() {
+        super();
+        this.textureWidth = 256;
+        this.textureHeight = 128;
+        (this.gun1 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 4, 2, 6);
+        this.gun1.setRotationPoint(-1.0f, -6.5f, -4.0f);
+        this.gun1.setTextureSize(64, 32);
+        this.gun1.mirror = true;
+        this.setRotation(this.gun1, 0.0f, 0.0f, 0.0f);
+        (this.gun6 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 5, 3);
+        this.gun6.setRotationPoint(0.0f, -4.5f, -2.5f);
+        this.gun6.setTextureSize(64, 32);
+        this.gun6.mirror = true;
+        this.setRotation(this.gun6, 0.0f, 0.0f, 0.0f);
+        (this.gun7 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 3, 2, 3);
+        this.gun7.setRotationPoint(-0.5f, -0.5f, -2.5f);
+        this.gun7.setTextureSize(64, 32);
+        this.gun7.mirror = true;
+        this.setRotation(this.gun7, 0.0f, 0.0f, 0.0f);
+        (this.gun14 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 1, 2, 2);
+        this.gun14.setRotationPoint(1.8f, -0.5f, -2.0f);
+        this.gun14.setTextureSize(64, 32);
+        this.gun14.mirror = true;
+        this.setRotation(this.gun14, 0.0f, 0.0f, 0.0f);
+        (this.gun15 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 1, 2, 2);
+        this.gun15.setRotationPoint(-0.8f, -0.5f, -2.0f);
+        this.gun15.setTextureSize(64, 32);
+        this.gun15.mirror = true;
+        this.setRotation(this.gun15, 0.0f, 0.0f, 0.0f);
+        (this.gun17 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 1, 2, 2);
+        this.gun17.setRotationPoint(1.8f, -2.5f, -2.0f);
+        this.gun17.setTextureSize(64, 32);
+        this.gun17.mirror = true;
+        this.setRotation(this.gun17, 0.0f, 0.0f, 0.0f);
+        (this.gun19 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 1, 2, 2);
+        this.gun19.setRotationPoint(-0.8f, -2.5f, -2.0f);
+        this.gun19.setTextureSize(64, 32);
+        this.gun19.mirror = true;
+        this.setRotation(this.gun19, 0.0f, 0.0f, 0.0f);
+        (this.gun21 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 2, 1);
+        this.gun21.setRotationPoint(0.0f, -2.5f, -2.8f);
+        this.gun21.setTextureSize(64, 32);
+        this.gun21.mirror = true;
+        this.setRotation(this.gun21, 0.0f, 0.0f, 0.0f);
+        (this.gun22 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 2, 1);
+        this.gun22.setRotationPoint(0.0f, -2.5f, -0.2f);
+        this.gun22.setTextureSize(64, 32);
+        this.gun22.mirror = true;
+        this.setRotation(this.gun22, 0.0f, 0.0f, 0.0f);
+        (this.gun26 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 2, 1);
+        this.gun26.setRotationPoint(0.0f, -0.5f, -2.8f);
+        this.gun26.setTextureSize(64, 32);
+        this.gun26.mirror = true;
+        this.setRotation(this.gun26, 0.0f, 0.0f, 0.0f);
+        (this.gun27 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 2, 1);
+        this.gun27.setRotationPoint(0.0f, -0.5f, -0.2f);
+        this.gun27.setTextureSize(64, 32);
+        this.gun27.mirror = true;
+        this.setRotation(this.gun27, 0.0f, 0.0f, 0.0f);
+        (this.gun29 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 1, 1, 2);
+        this.gun29.setRotationPoint(1.8f, -5.0f, -2.0f);
+        this.gun29.setTextureSize(64, 32);
+        this.gun29.mirror = true;
+        this.setRotation(this.gun29, 0.0f, 0.0f, 0.0f);
+        (this.gun30 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 1, 1, 2);
+        this.gun30.setRotationPoint(-0.8f, -5.0f, -2.0f);
+        this.gun30.setTextureSize(64, 32);
+        this.gun30.mirror = true;
+        this.setRotation(this.gun30, 0.0f, 0.0f, 0.0f);
+        (this.gun31 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 1, 1);
+        this.gun31.setRotationPoint(0.0f, -5.0f, -0.2f);
+        this.gun31.setTextureSize(64, 32);
+        this.gun31.mirror = true;
+        this.setRotation(this.gun31, 0.0f, 0.0f, 0.0f);
+        (this.gun32 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 2, 1, 1);
+        this.gun32.setRotationPoint(0.0f, -5.0f, -2.8f);
+        this.gun32.setTextureSize(64, 32);
+        this.gun32.mirror = true;
+        this.setRotation(this.gun32, 0.0f, 0.0f, 0.0f);
+        (this.gun33 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 3, 5, 2);
+        this.gun33.setRotationPoint(-0.5f, -4.5f, -2.0f);
+        this.gun33.setTextureSize(64, 32);
+        this.gun33.mirror = true;
+        this.setRotation(this.gun33, 0.0f, 0.0f, 0.0f);
+        (this.gun34 = new ModelRenderer((ModelBase)this, 0, 0)).addBox(0.0f, 0.0f, 0.0f, 3, 2, 3);
+        this.gun34.setRotationPoint(-0.5f, -2.5f, -2.5f);
+        this.gun34.setTextureSize(64, 32);
+        this.gun34.mirror = true;
+        this.setRotation(this.gun34, 0.0f, 0.0f, 0.0f);
+        (this.gun35 = new ModelRenderer((ModelBase)this, 50, 0)).addBox(0.0f, 0.0f, 0.0f, 3, 2, 3);
+        this.gun35.setRotationPoint(-0.5f, 0.5f, -2.5f);
+        this.gun35.setTextureSize(64, 32);
+        this.gun35.mirror = true;
+        this.setRotation(this.gun35, 0.0f, 0.0f, 0.0f);
+    }
+    
+    public void render(final Entity entity, final float f, final float f1, final float f2, final float f3, final float f4, final float f5) {
+        super.render(entity, f, f1, f2, f3, f4, f5);
+        this.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+        this.gun1.render(f5);
+        this.gun6.render(f5);
+        this.gun7.render(f5);
+        this.gun14.render(f5);
+        this.gun15.render(f5);
+        this.gun17.render(f5);
+        this.gun19.render(f5);
+        this.gun21.render(f5);
+        this.gun22.render(f5);
+        this.gun26.render(f5);
+        this.gun27.render(f5);
+        this.gun29.render(f5);
+        this.gun30.render(f5);
+        this.gun31.render(f5);
+        this.gun32.render(f5);
+        this.gun33.render(f5);
+        this.gun34.render(f5);
+        this.gun35.render(f5);
+    }
+    
+    private void setRotation(final ModelRenderer model, final float x, final float y, final float z) {
+        model.rotateAngleX = x;
+        model.rotateAngleY = y;
+        model.rotateAngleZ = z;
+    }
+}
