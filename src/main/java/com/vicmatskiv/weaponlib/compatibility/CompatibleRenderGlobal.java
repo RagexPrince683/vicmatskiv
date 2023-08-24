@@ -1,6 +1,7 @@
 package com.vicmatskiv.weaponlib.compatibility;
 
-import cpw.mods.fml.relauncher.*;
+import
+        cpw.mods.fml.relauncher.*;
 import net.minecraft.client.multiplayer.*;
 import net.minecraft.client.*;
 import java.nio.*;
@@ -1382,41 +1383,30 @@ public class CompatibleRenderGlobal extends RenderGlobal implements IWorldAccess
     
     public void playSoundToNearExcept(final EntityPlayer p_85102_1_, final String p_85102_2_, final double p_85102_3_, final double p_85102_5_, final double p_85102_7_, final float p_85102_9_, final float p_85102_10_) {
     }
-    
+
     public void spawnParticle(final String p_72708_1_, final double p_72708_2_, final double p_72708_4_, final double p_72708_6_, final double p_72708_8_, final double p_72708_10_, final double p_72708_12_) {
         try {
             this.doSpawnParticle(p_72708_1_, p_72708_2_, p_72708_4_, p_72708_6_, p_72708_8_, p_72708_10_, p_72708_12_);
-        }
-        catch (final Throwable throwable) {
+        } catch (final Throwable throwable) {
             final CrashReport crashreport = CrashReport.makeCrashReport(throwable, "Exception while adding particle");
             final CrashReportCategory crashreportcategory = crashreport.makeCategory("Particle being added");
-            crashreportcategory.addCrashSection("Name", (Object)p_72708_1_);
-            crashreportcategory.addCrashSectionCallable("Position", (Callable)new Callable() {
+            crashreportcategory.addCrashSection("Name", (Object) p_72708_1_);
+
+            // Modify the anonymous class constructor to accept parameters
+            crashreportcategory.addCrashSectionCallable("Position", new Callable<String>() {
                 private static final String __OBFID = "CL_00000955";
-                final /* synthetic */ double val$p_72708_2_;
-                final /* synthetic */ double val$p_72708_4_;
-                final /* synthetic */ double val$p_72708_6_;
-                final /* synthetic */ CompatibleRenderGlobal this$0;
-                
-                CompatibleRenderGlobal$1() {
-                    this.this$0 = this$0;
-                    super();
-                }
-                
+
                 @Override
                 public String call() {
                     return CrashReportCategory.func_85074_a(p_72708_2_, p_72708_4_, p_72708_6_);
                 }
-                
-                @Override
-                public /* bridge */ Object call() throws Exception {
-                    return this.call();
-                }
             });
+
             throw new ReportedException(crashreport);
         }
     }
-    
+
+
     public EntityFX doSpawnParticle(final String p_72726_1_, final double p_72726_2_, final double p_72726_4_, final double p_72726_6_, final double p_72726_8_, final double p_72726_10_, final double p_72726_12_) {
         if (this.mc == null || this.mc.renderViewEntity == null || this.mc.effectRenderer == null) {
             return null;
